@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/create/" method="post">
+		{%csrf_token %}
+		<label>Title</label>
+		{{show}}
+		<input type="text" name="title">
+		<input type="submit" name="create">
+	</form>
+
+</body>
+</html>
